@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Centerfugue</title>
+<meta name="description" content="Give me the problem you can't hand to your team.">
+<style>
+  body { margin: 0; background: #F6F4EF; }
+  * { box-sizing: border-box; }
+  .serif { font-family: Georgia, 'Iowan Old Style', 'Palatino Linotype', serif; }
+  .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; }
+  .mono { font-family: 'Courier New', ui-monospace, SFMono-Regular, Menlo, monospace; }
+  a.cta { transition: opacity 0.15s ease, transform 0.1s ease; }
+  a.cta:hover { opacity: 0.85; }
+  a.cta:active { transform: scale(0.98); }
+  .fadeup { animation: fadeup 0.6s ease both; }
+  @keyframes fadeup { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+  .field { width: 100%; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; font-size: 15px; padding: 13px 14px; border: 1px solid #D8D2C4; border-radius: 3px; background: #FFFFFF; color: #18171B; margin-bottom: 16px; }
+  .field:focus { outline: none; border-color: #1B2A41; }
+  textarea.field { resize: vertical; min-height: 90px; font-family: inherit; line-height: 1.5; }
+  label.fieldlabel { display: block; font-size: 13px; font-weight: 700; color: #4B4941; margin-bottom: 6px; text-align: left; }
+  @media (max-width: 720px) {
+    .hero-title { font-size: 38px !important; line-height: 1.16 !important; }
+    .section-pad { padding-left: 24px !important; padding-right: 24px !important; }
+    .grid-3 { grid-template-columns: 1fr !important; }
+    .sure-row { flex-direction: column !important; }
+  }
+</style>
+</head>
+<body>
+
+<div style="width: 100%; min-height: 100vh; display: flex; flex-direction: column; align-items: stretch; color: #18171B; background: #F6F4EF;">
+
+  <!-- NAV -->
+  <div class="sans section-pad" style="width: 100%; max-width: 1040px; margin: 0 auto; padding: 28px 40px 0 40px; display: flex; justify-content: space-between; align-items: center;">
+    <div style="display: flex; flex-direction: column; align-items: flex-start;">
+      <div class="mono" style="font-weight: 700; font-size: 24px; letter-spacing: 0.24em; color: #18171B; line-height: 1;">CENTERFUGUE</div>
+      <div style="width: 60px; height: 2px; background: #1B2A41; margin-top: 8px;"></div>
+    </div>
+    <a href="#contact" class="sans" style="font-size: 14px; color: #6B6862; text-decoration: none;">Open a case &rarr;</a>
+  </div>
+
+  <!-- HERO -->
+  <div class="section-pad fadeup" style="width: 100%; max-width: 860px; margin: 0 auto; padding: 88px 40px 56px 40px; text-align: left;">
+    <div class="mono" style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #1B2A41; margin-bottom: 20px;">
+      Strictly confidential.
+    </div>
+    <h1 class="serif hero-title" style="margin: 0 0 24px 0; font-size: 56px; line-height: 1.12; font-weight: 400; color: #18171B;">
+      Give me the problem<br>you can't hand to your team.
+    </h1>
+    <p class="sans" style="margin: 0 0 36px 0; font-size: 19px; line-height: 1.6; color: #4B4941; max-width: 620px;">
+      I take full ownership, work out what needs to happen, and bring it back resolved.
+      Nothing briefed to your team. No one else on a need-to-know basis but you.
+    </p>
+    <a href="#contact" class="cta sans" style="display: inline-block; background: #1B2A41; color: #FFFFFF; padding: 14px 28px; border-radius: 2px; text-decoration: none; font-size: 15px; font-weight: 600;">
+      Open a case
+    </a>
+  </div>
+
+  <!-- WHO THIS IS FOR -->
+  <div class="section-pad" style="width: 100%; max-width: 860px; margin: 0 auto; padding: 40px 40px 8px 40px; border-top: 1px solid #E2DDD1;">
+    <p class="serif" style="margin: 40px 0 0 0; font-size: 24px; line-height: 1.55; color: #2A2823; font-style: italic; max-width: 680px;">
+      "You're the one everyone brings their problems to. This is for the one you can't bring to anyone:
+      too private, too political, or spread across too many people to own."
+    </p>
+  </div>
+
+  <!-- ABOUT / PERSONA -->
+  <div class="section-pad" style="width: 100%; max-width: 860px; margin: 0 auto; padding: 56px 40px 8px 40px;">
+    <div class="mono" style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #948F82; margin-bottom: 14px;">Who's on the other end</div>
+    <p class="sans" style="margin: 0; font-size: 16px; line-height: 1.7; color: #383630; max-width: 660px;">
+      I've spent close to two decades inside large organizations, much of it sitting near the people carrying
+      the most, watching exactly what falls through the cracks: too private for a team, too political for
+      a board, or spread across so many people that no one owns the outcome. I built this because that
+      problem deserves one person.
+    </p>
+  </div>
+
+  <!-- HOW IT WORKS -->
+  <div class="section-pad" style="width: 100%; max-width: 1040px; margin: 0 auto; padding: 72px 40px 80px 40px;">
+    <div class="mono" style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #948F82; margin-bottom: 12px;">The protocol</div>
+    <h2 class="serif" style="margin: 0 0 40px 0; font-size: 32px; font-weight: 400; color: #18171B;">One case. Thirty days. Closed.</h2>
+
+    <div class="grid-3" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px;">
+
+      <div>
+        <div class="mono" style="font-size: 30px; color: #1B2A41; margin-bottom: 12px;">01</div>
+        <div class="sans" style="font-weight: 700; font-size: 16px; margin-bottom: 8px; color: #18171B;">The brief</div>
+        <div class="sans" style="font-size: 15px; line-height: 1.6; color: #6B6862;">A 60-minute call where you give me the unfiltered version. No form to fill in first.</div>
+      </div>
+
+      <div>
+        <div class="mono" style="font-size: 30px; color: #1B2A41; margin-bottom: 12px;">02</div>
+        <div class="sans" style="font-weight: 700; font-size: 16px; margin-bottom: 8px; color: #18171B;">The terms, within 48 hours</div>
+        <div class="sans" style="font-size: 15px; line-height: 1.6; color: #6B6862;">What "closed" looks like, what I will and won't touch, and how often you'll hear from me.</div>
+      </div>
+
+      <div>
+        <div class="mono" style="font-size: 30px; color: #1B2A41; margin-bottom: 12px;">03</div>
+        <div class="sans" style="font-weight: 700; font-size: 16px; margin-bottom: 8px; color: #18171B;">The resolution</div>
+        <div class="sans" style="font-size: 15px; line-height: 1.6; color: #6B6862;">Two ten-minute updates a week. At the end, a one-page handover: what's done, what's next.</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SURE BAND -->
+  <div style="width: 100%; background: #17151E; padding: 72px 40px;">
+    <div class="section-pad" style="max-width: 860px; margin: 0 auto;">
+      <div class="mono" style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #1B2A41; margin-bottom: 16px;">The standard</div>
+      <h2 class="serif" style="margin: 0 0 32px 0; font-size: 30px; font-weight: 400; color: #F6F4EF;">S.U.R.E.</h2>
+      <div class="sure-row" style="display: flex; gap: 24px; flex-wrap: wrap;">
+        <div class="sans" style="flex: 1; min-width: 140px;">
+          <div style="font-weight: 700; color: #F6F4EF; font-size: 15px;">Someone</div>
+          <div style="color: #A6A29A; font-size: 14px; margin-top: 4px;">not a form, not a bot: one person</div>
+        </div>
+        <div class="sans" style="flex: 1; min-width: 140px;">
+          <div style="font-weight: 700; color: #F6F4EF; font-size: 15px;">Ultimately</div>
+          <div style="color: #A6A29A; font-size: 14px; margin-top: 4px;">the responsibility stops with me</div>
+        </div>
+        <div class="sans" style="flex: 1; min-width: 140px;">
+          <div style="font-weight: 700; color: #F6F4EF; font-size: 15px;">Responsible</div>
+          <div style="color: #A6A29A; font-size: 14px; margin-top: 4px;">for the outcome, not just the advice</div>
+        </div>
+        <div class="sans" style="flex: 1; min-width: 140px;">
+          <div style="font-weight: 700; color: #F6F4EF; font-size: 15px;">Entirely</div>
+          <div style="color: #A6A29A; font-size: 14px; margin-top: 4px;">you hand it over completely</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WHAT I DON'T DO / CONFIDENTIALITY -->
+  <div class="section-pad" style="width: 100%; max-width: 860px; margin: 0 auto; padding: 72px 40px;">
+    <div class="grid-3" style="display: grid; grid-template-columns: 1fr 1fr; gap: 48px;">
+      <div>
+        <div class="sans" style="font-weight: 700; font-size: 16px; margin-bottom: 10px; color: #18171B;">What I don't touch</div>
+        <div class="sans" style="font-size: 15px; line-height: 1.6; color: #6B6862;">
+          I don't give legal, financial, tax or medical advice.
+        </div>
+      </div>
+      <div>
+        <div class="sans" style="font-weight: 700; font-size: 16px; margin-bottom: 10px; color: #18171B;">Need to know</div>
+        <div class="sans" style="font-size: 15px; line-height: 1.6; color: #6B6862;">
+          Everything here is on a need-to-know basis. An NDA is signed before we start. Nothing shared here goes further than this conversation.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT / FORM -->
+  <div id="contact" class="section-pad" style="width: 100%; max-width: 560px; margin: 0 auto; padding: 40px 40px 100px 40px; text-align: left; border-top: 1px solid #E2DDD1;">
+    <h2 class="serif" style="margin: 56px 0 12px 0; font-size: 30px; font-weight: 400; color: #18171B; text-align: center;">Open a case.</h2>
+    <p class="sans" style="margin: 0 0 32px 0; font-size: 15px; line-height: 1.6; color: #6B6862; text-align: center;">
+      Answer three questions. It opens a pre-filled email in your own mail app: nothing sends until you do.
+    </p>
+
+    <label class="fieldlabel" for="situation">What's going on?</label>
+    <textarea class="field" id="situation" rows="4" placeholder="The unfiltered version. As much or as little detail as you're comfortable with here."></textarea>
+
+    <label class="fieldlabel" for="outcome">What would "closed" look like?</label>
+    <textarea class="field" id="outcome" rows="3" placeholder="What does resolved actually mean for you?"></textarea>
+
+    <label class="fieldlabel" for="contactinfo">Best way to reach you</label>
+    <input class="field" id="contactinfo" type="text" placeholder="An email address is enough. No name required.">
+
+    <a href="#" id="sendBrief" class="cta sans" style="display: block; text-align: center; background: #1B2A41; color: #FFFFFF; padding: 15px 32px; border-radius: 2px; text-decoration: none; font-size: 15px; font-weight: 600; margin-top: 8px;">
+      Send the brief
+    </a>
+
+    <div class="mono" style="margin-top: 40px; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #B0AB9E; text-align: center;">Confidential. Distribution limited. A small number of cases, at no charge, while this is being built quietly.</div>
+  </div>
+
+</div>
+
+<script>
+  var CONTACT_EMAIL = 'ops@centerfugue.com';
+
+  function buildMailto() {
+    var s = document.getElementById('situation').value.trim() || '[describe the situation]';
+    var o = document.getElementById('outcome').value.trim() || '[what "closed" would look like]';
+    var c = document.getElementById('contactinfo').value.trim() || '[best way to reach me]';
+    var subject = encodeURIComponent("I have a problem I can't hand to my team");
+    var body = "WHAT'S GOING ON\n" + s + "\n\n" +
+               "WHAT \"CLOSED\" LOOKS LIKE\n" + o + "\n\n" +
+               "BEST WAY TO REACH ME\n" + c;
+    return 'mailto:' + CONTACT_EMAIL + '?subject=' + subject + '&body=' + encodeURIComponent(body);
+  }
+
+  document.getElementById('sendBrief').addEventListener('click', function (e) {
+    e.preventDefault();
+    window.location.href = buildMailto();
+  });
+</script>
+
+</body>
+</html>
